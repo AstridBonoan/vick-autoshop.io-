@@ -1,5 +1,6 @@
 import { Phone, MapPin, Share2, MessageCircle } from 'lucide-react'
 import { NAV_LINKS, PHONE, PHONE_TEL, FULL_ADDRESS, HOURS } from '../data/site'
+import Logo from './Logo'
 
 export default function Footer() {
   const year = new Date().getFullYear()
@@ -9,8 +10,7 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
           <div className="sm:col-span-2 lg:col-span-1">
-            <p className="text-xl font-extrabold text-white">VICK AUTO REPAIR</p>
-            <p className="text-sm text-accent-orange">INC</p>
+            <Logo className="h-14 w-auto" showTagline />
             <p className="mt-4 text-sm leading-relaxed">
               Professional auto repair and maintenance for Queens drivers. Honest
               diagnostics, fair pricing, and quality workmanship.

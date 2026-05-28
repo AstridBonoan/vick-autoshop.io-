@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Menu, X, Phone } from 'lucide-react'
 import { NAV_LINKS, PHONE, PHONE_TEL } from '../data/site'
+import Logo from './Logo'
 
 export default function Navbar() {
   const [open, setOpen] = useState(false)
@@ -21,11 +22,8 @@ export default function Navbar() {
       }`}
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
-        <a href="#" className="group flex flex-col leading-tight">
-          <span className="text-lg font-extrabold tracking-tight text-white sm:text-xl">
-            VICK AUTO REPAIR
-          </span>
-          <span className="text-xs font-medium text-accent-orange">INC · Queens, NY</span>
+        <a href="#" className="group shrink-0 transition-opacity hover:opacity-90">
+          <Logo showTagline />
         </a>
 
         <ul className="hidden items-center gap-8 md:flex">

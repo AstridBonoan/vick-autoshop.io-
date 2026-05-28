@@ -18,11 +18,11 @@ export default function Gallery() {
         </div>
 
         <div className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {GALLERY.map((item, i) => (
+          {GALLERY.map((item) => (
             <figure
               key={item.caption}
-              className={`group relative overflow-hidden rounded-2xl ${
-                i === 0 ? 'sm:col-span-2 sm:row-span-1 lg:col-span-2' : ''
+              className={`group relative overflow-hidden rounded-2xl bg-charcoal-light ${
+                item.featured ? 'sm:col-span-2 lg:col-span-2' : ''
               }`}
             >
               <img
@@ -30,7 +30,9 @@ export default function Gallery() {
                 alt={item.alt}
                 loading="lazy"
                 className={`w-full object-cover transition-transform duration-500 group-hover:scale-105 ${
-                  i === 0 ? 'aspect-[16/9] h-full min-h-[240px]' : 'aspect-[4/3] h-56 sm:h-64'
+                  item.featured
+                    ? 'aspect-[16/9] h-full min-h-[240px]'
+                    : 'aspect-[4/3] h-56 sm:h-64'
                 }`}
               />
               <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-matte-black/90 to-transparent px-4 py-4">

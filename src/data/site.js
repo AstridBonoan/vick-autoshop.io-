@@ -1,3 +1,6 @@
+/** Local images bundled in /public/images (reliable on GitHub Pages) */
+export const img = (filename) => `${import.meta.env.BASE_URL}images/${filename}`
+
 export const PHONE = '(718) 313-9722'
 export const PHONE_TEL = '+17183139722'
 export const EMAIL = 'vicmahabeer@vicautorepairinc.com'
@@ -125,36 +128,50 @@ export const REVIEWS = [
 
 export const GALLERY = [
   {
-    src: 'https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=800&q=80',
+    src: img('diagnostics.jpg'),
     alt: 'Mechanic inspecting vehicle engine',
     caption: 'Expert diagnostics',
+    featured: true,
   },
   {
-    src: 'https://images.unsplash.com/photo-1625047509248-ec889cbff87f?w=800&q=80',
+    src: img('brakes.jpg'),
     alt: 'Brake service in progress',
     caption: 'Brake & rotor service',
   },
   {
-    src: 'https://images.unsplash.com/photo-1619642751034-765df692b950?w=800&q=80',
+    src: img('shop-interior.jpg'),
     alt: 'Auto repair shop interior',
     caption: 'Our Queens shop',
   },
   {
-    src: 'https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&q=80',
+    src: img('scan-tools.jpg'),
     alt: 'Technician using diagnostic equipment',
     caption: 'Advanced scan tools',
   },
   {
-    src: 'https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=800&q=80',
+    src: img('garage-lift.jpg'),
     alt: 'Vehicle on lift for service',
     caption: 'Complete vehicle care',
   },
   {
-    src: 'https://images.unsplash.com/photo-1601362840469-51e4d8d58785?w=800&q=80',
+    src: img('mechanic-hood.jpg'),
     alt: 'Mechanic working under hood',
     caption: 'Skilled technicians',
   },
+  {
+    src: img('oil-change.jpg'),
+    alt: 'Mechanic performing oil change service',
+    caption: 'Oil & maintenance',
+  },
+  {
+    src: img('team-work.jpg'),
+    alt: 'Auto repair technicians at work',
+    caption: 'Trusted local team',
+  },
 ]
+
+export const SHOP_IMAGE = img('shop-interior.jpg')
+export const HERO_IMAGE = img('hero.jpg')
 
 export const NAV_LINKS = [
   { href: '#services', label: 'Services' },

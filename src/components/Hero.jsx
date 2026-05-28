@@ -1,15 +1,12 @@
 import { Phone, Calendar } from 'lucide-react'
-import { PHONE, PHONE_TEL } from '../data/site'
-
-const HERO_IMG =
-  'https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=1920&q=85'
+import { PHONE, PHONE_TEL, HERO_IMAGE } from '../data/site'
 
 export default function Hero() {
   return (
     <section className="relative min-h-[90vh] overflow-hidden bg-matte-black pt-20">
       <div className="absolute inset-0">
         <img
-          src={HERO_IMG}
+          src={HERO_IMAGE}
           alt="Mechanic performing vehicle diagnostics"
           className="h-full w-full object-cover opacity-40"
         />

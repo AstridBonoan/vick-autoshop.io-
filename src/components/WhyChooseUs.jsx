@@ -1,8 +1,5 @@
 import { CheckCircle2 } from 'lucide-react'
-import { WHY_CHOOSE } from '../data/site'
-
-const SHOP_IMG =
-  'https://images.unsplash.com/photo-1619642751034-765df692b950?w=900&q=80'
+import { WHY_CHOOSE, SHOP_IMAGE } from '../data/site'
 
 export default function WhyChooseUs() {
   return (
@@ -11,7 +8,7 @@ export default function WhyChooseUs() {
         <div className="grid items-center gap-12 lg:grid-cols-2">
           <div className="relative overflow-hidden rounded-2xl shadow-xl">
             <img
-              src={SHOP_IMG}
+              src={SHOP_IMAGE}
               alt="Vick Auto Repair shop interior"
               className="aspect-[4/3] w-full object-cover"
             />

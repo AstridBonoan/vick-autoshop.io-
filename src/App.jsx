@@ -8,10 +8,12 @@ import Gallery from './components/Gallery'
 import Booking from './components/Booking'
 import Footer from './components/Footer'
 import MobileCallBar from './components/MobileCallBar'
+import Watermark from './components/Watermark'
 
 export default function App() {
   return (
     <>
+      <Watermark />
       <Navbar />
       <main className="pb-20 md:pb-0">
         <Hero />
